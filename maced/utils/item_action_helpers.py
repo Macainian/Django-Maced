@@ -4,7 +4,6 @@ import logging
 import sys
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponse
-from django.db import models
 
 from maced.utils.constants import GET, MERGE, ADD, EDIT, CLONE
 from maced.utils.misc import prettify_string
