@@ -55,7 +55,7 @@ def maced_view(request, **kwargs):
     data = {}
 
     # Authenticate the user
-    if request.user.is_authenticated() or not need_authentication:
+    if request.user.is_authenticated or not need_authentication:
         data["authenticated"] = True
     else:
         data["authenticated"] = False

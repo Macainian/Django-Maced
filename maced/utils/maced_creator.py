@@ -6,7 +6,7 @@ import json
 from copy import deepcopy
 import sys
 
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.shortcuts import render
 
 from maced.utils.constants import PRIMARY_ACTION_TYPES, VALID_INPUT_TYPES, VALID_SELECT_TYPES, ADD, EDIT, MERGE, \

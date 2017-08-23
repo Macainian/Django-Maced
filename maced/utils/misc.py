@@ -189,7 +189,7 @@ def prettify_string(ugly_string):
 
 
 def is_authenticated(request, need_authentication):
-    if request.user.is_authenticated() or not need_authentication:
+    if request.user.is_authenticated or not need_authentication:
         return True
     else:
         return False
